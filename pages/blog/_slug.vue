@@ -33,13 +33,7 @@
     </div>
     <!-- <img
       class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
-      :src="article.image"
-    /> -->
-    <!-- <nuxt-img
-      :src="atricle.image"
-      loading="lazy"
-      alt="mainImg"
-      class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
+      :src="this.article.img"
     /> -->
 
     <nuxt-content class="prose min-w-full p-10 mx-auto" :document="article" />
