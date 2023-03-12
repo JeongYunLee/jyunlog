@@ -6,7 +6,7 @@
       <div class="p-6">
         <div class="flex flex-row justify-between items-center">
           <div class="my-2">
-            <Folder class="text-indigo-800"></Folder>
+            <Folder class="text-green-800"></Folder>
           </div>
           <div class="flex flex-row justify-between">
             <div class="mx-1">
