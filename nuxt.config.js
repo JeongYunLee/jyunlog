@@ -2,6 +2,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
+  googleAnalytics: {
+    // Options
+    id: 'G-J8B92215GL'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "nuxt-blog",
@@ -27,7 +32,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", "@nuxtjs/google-analytics"],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
