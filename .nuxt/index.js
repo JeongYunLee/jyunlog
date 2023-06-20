@@ -17,6 +17,7 @@ import nuxt_plugin_pluginclient_7560a7b6 from 'nuxt_plugin_pluginclient_7560a7b6
 import nuxt_plugin_pluginserver_2b091dad from 'nuxt_plugin_pluginserver_2b091dad' // Source: ./content/plugin.server.js (mode: 'server')
 import nuxt_plugin_googleanalytics_77611d07 from 'nuxt_plugin_googleanalytics_77611d07' // Source: ./google-analytics.js (mode: 'client')
 import nuxt_plugin_image_54b77aba from 'nuxt_plugin_image_54b77aba' // Source: ./image.js (mode: 'all')
+import nuxt_plugin_ga_34d435b2 from 'nuxt_plugin_ga_34d435b2' // Source: ../plugins/ga.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -45,7 +46,7 @@ Vue.component(Nuxt.name, Nuxt)
 
 Object.defineProperty(Vue.prototype, '$nuxt', {
   get() {
-    const globalNuxt = this.$root.$options.$nuxt
+    const globalNuxt = this.$root ? this.$root.$options.$nuxt : null
     if (process.client && !globalNuxt && typeof window !== 'undefined') {
       return window.$nuxt
     }
@@ -59,7 +60,8 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp(ssrContext, config = {}) {
-  const router = await createRouter(ssrContext, config)
+  const store = null
+  const router = await createRouter(ssrContext, config, { store })
 
   // Create Root instance
 
@@ -131,6 +133,7 @@ async function createApp(ssrContext, config = {}) {
     req: ssrContext ? ssrContext.req : undefined,
     res: ssrContext ? ssrContext.res : undefined,
     beforeRenderFns: ssrContext ? ssrContext.beforeRenderFns : undefined,
+    beforeSerializeFns: ssrContext ? ssrContext.beforeSerializeFns : undefined,
     ssrContext
   })
 
@@ -198,6 +201,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_image_54b77aba === 'function') {
     await nuxt_plugin_image_54b77aba(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_ga_34d435b2 === 'function') {
+    await nuxt_plugin_ga_34d435b2(app.context, inject)
   }
 
   // Lock enablePreview in context

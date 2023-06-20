@@ -12,15 +12,15 @@
     "chunkName": "pages/projects"
   },
   {
-    "name": "blog-slug",
-    "path": "/blog/:slug",
-    "component": "/Users/jeongyunl/Documents/GitHub/jyunlog/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "/Users/jeongyunl/Documents/GitHub/jyunlog/pages/index.vue",
     "chunkName": "pages/index"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "/Users/jeongyunl/Documents/GitHub/jyunlog/pages/blog/_slug.vue",
+    "chunkName": "pages/blog/_slug"
   }
 ]

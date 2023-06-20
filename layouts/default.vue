@@ -6,6 +6,12 @@
       <Nuxt />
       <TheFooter />
     </div>
+
+    <!-- Utterances -->
+    <script src="https://utteranc.es/client.js" repo="JeongYunLee/jyunlog" issue-term="pathname" label="Comment"
+      theme="github-light" crossorigin="anonymous" async>
+    </script>
+
   </section>
 </template>
 

@@ -8,8 +8,8 @@ import "prismjs/plugins/line-numbers/prism-line-numbers";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 
 // Include the line highlight plugin: (optional)
-import "prismjs/plugins/line-highlight/prism-line-highlight";
-import "prismjs/plugins/line-highlight/prism-line-highlight.css";
+// import "prismjs/plugins/line-highlight/prism-line-highlight";
+// import "prismjs/plugins/line-highlight/prism-line-highlight.css";
 
 // Include some other plugins: (optional)
 // import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard";
