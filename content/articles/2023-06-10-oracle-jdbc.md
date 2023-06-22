@@ -7,8 +7,9 @@ author: JeongYun Lee
 draft: false
 ---
 
-### 1.
+# 작성 중~
 
+### 1.
 
 oracle 설치: https://king-ja.tistory.com/107
 참고: https://shanepark.tistory.com/400
