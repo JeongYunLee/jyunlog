@@ -8,7 +8,7 @@ const siteMetadata = {
   slogan: "",
   description:
     "A tech enthusiast & self taught learner. Love to talk the way of tech.",
-  language: "ko-KR", 
+  language: "ko-KR",
   theme: "system", // system, dark or light
   siteUrl: "https://rathik.dev",
   siteRepo: "#",
@@ -22,8 +22,9 @@ const siteMetadata = {
   twitter_user: "#",
   stackoverflow: "#",
   youtube: "#",
-  linkedin: "https://www.linkedin.com/in/%EC%A0%95%EC%9C%A4-%EC%9D%B4-50822922a/",
-  home:"#",
+  linkedin:
+    "https://www.linkedin.com/in/%EC%A0%95%EC%9C%A4-%EC%9D%B4-50822922a/",
+  home: "#",
 };
 
 export default siteMetadata;

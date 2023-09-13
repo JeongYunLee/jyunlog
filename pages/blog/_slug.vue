@@ -7,20 +7,13 @@
       {{ article.title }}
     </h1>
     <div class="flex items-center font-medium mt-6 sm:mx-3 justify-center">
-      <nuxt-img
-        :src="siteMetadata.siteLogo"
-        loading="lazy"
-        alt=""
-        class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-      />
+      <nuxt-img :src="siteMetadata.siteLogo" loading="lazy" alt=""
+        class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800" />
       <div>
         <div class="text-slate-900 dark:text-slate-200">
-          <a 
-          target="_blank"
-          rel="noopener noreferrer"
-          :href="siteMetadata.home">
-          {{ siteMetadata.author }} 
-          </a> 
+          <a target="_blank" rel="noopener noreferrer" :href="siteMetadata.home">
+            {{ siteMetadata.author }}
+          </a>
         </div>
         <!-- <a
           target="_blank"
@@ -31,14 +24,16 @@
         </a> -->
       </div>
     </div>
-    <!-- <img
-      class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
-      :src="this.article.img"
-    /> -->
 
     <nuxt-content class="prose min-w-full p-10 mx-auto" :document="article" />
+
+    <script src="https://utteranc.es/client.js" repo="JeongYunLee/jyunlog" issue-term="pathname" label="Comment"
+      theme="github-light" crossorigin="anonymous" async>
+    </script>
   </div>
 </template>
+
+
 <script>
 import Prism from "~/plugins/prism";
 import siteMetaInfo from "@/data/sitemetainfo";
@@ -79,15 +74,19 @@ export default {
   },
 };
 </script>
+
+
 <style>
 .nuxt-content h2 {
   font-weight: bold;
   font-size: 28px;
 }
+
 .nuxt-content h3 {
   font-weight: bold;
   font-size: 22px;
 }
+
 .nuxt-content p {
   margin-bottom: 20px;
 }
