@@ -52,7 +52,7 @@
             </h2>
             <ul class="flex flex-wrap gap-4 items-center" style="list-style:none;">
                 <li>
-                    <img class="w-36 h-36" src="/images/author.png" />
+                    <img class="w-36 h-36" src="/images/setting/author.png" />
                 </li>
                 <li>
                     <colorMC />
