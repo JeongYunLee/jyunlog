@@ -1,29 +1,52 @@
-<template>
-  <!-- Section 1 -->
-  <section class="w-full px-8 pb-12 antialiased bg-white dark:bg-slate-800">
-    <div class="mx-auto max-w-6xl">
-      <TheHeader />
-      <Nuxt />
-      <TheFooter />
-    </div>
-
-    <!-- Utterances -->
-    <!-- <script src="https://utteranc.es/client.js" repo="JeongYunLee/jyunlog" issue-term="pathname"
-      label="Comment" theme="github-light" crossorigin="anonymous" async>
-    </script> -->
-  </section>
-</template>
-
-<script>
-// import TheHeader from "../components/TheHeader.vue";
-import TheFooter from "../components/TheFooter.vue";
-
-export default {
-  component: {
-    // TheHeader,
-    TheFooter,
-  },
-};
+<script setup>
+const headerNavLinks = [
+    { href: '/', title: 'About' },
+    { href: '/blog', title: 'Blog' },
+    { href: '/tags', title: 'Tags' },
+    { href: '/projects', title: 'Projects' },
+    { href: '/Latest', title: 'Latest' },
+];
+const siteMetadata = useAppConfig().metadata;
 </script>
+<template>
+    <Html lang="en" class="scroll-smooth">
 
-<style></style>
+    <Body class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
+        <SectionContainer>
+            <div class="flex h-screen flex-col justify-between">
+                <header class="flex items-center justify-between py-10">
+                    <div>
+                        <NuxtLink href="/" :aria-label="siteMetadata.headerTitle">
+                            <!-- <div class="flex items-center justify-between">
+                                <div class="mr-3">
+                                    <img src="~/assets/icons/author.png" class="h-12" />
+                                </div>
+                                <div v-if="typeof siteMetadata.headerTitle === 'string'"
+                                    class="hidden h-6 text-2xl font-semibold sm:block">
+                                    {{ siteMetadata.headerTitle }}
+                                </div>
+                                <template v-else>{{ siteMetadata.headerTitle }}</template>
+                            </div> -->
+                        </NuxtLink>
+                    </div>
+                    <div class="flex items-center text-base leading-5">
+                        <div class="hidden sm:block">
+                            <NuxtLink v-for="link in headerNavLinks" :key="link.title" :href="link.href"
+                                class="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4">
+                                {{ link.title }}
+                            </NuxtLink>
+                        </div>
+                        <ThemeSwitch />
+                        <MobileNav />
+                    </div>
+                </header>
+                <main class="mb-auto">
+                    <slot />
+                </main>
+                <Footer />
+            </div>
+        </SectionContainer>
+    </Body>
+
+    </Html>
+</template>
