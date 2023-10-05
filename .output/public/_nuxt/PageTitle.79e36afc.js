@@ -1,0 +1,1 @@
+import{s as e,o as n,v as o,r}from"./entry.76f10c94.js";const s={},a={class:"text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"};function c(t,l){return n(),o("h1",a,[r(t.$slots,"default")])}const d=e(s,[["render",c]]);export{d as _};

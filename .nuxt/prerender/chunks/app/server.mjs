@@ -1068,7 +1068,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  author: () => import('./_nuxt/author-f1cc275c.mjs').then((m) => m.default || m),
+  author: () => import('./_nuxt/author-382939af.mjs').then((m) => m.default || m),
   default: () => import('./_nuxt/default-566a7aa9.mjs').then((m) => m.default || m),
   list: () => import('./_nuxt/list-5036b417.mjs').then((m) => m.default || m),
   post: () => import('./_nuxt/post-fe0de1a0.mjs').then((m) => m.default || m),
