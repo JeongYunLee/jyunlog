@@ -1,0 +1,1 @@
+{"version":3,"file":"SectionContainer-a4c68ffb.js","sources":["../../../../components/SectionContainer.vue"],"sourcesContent":["<template>\n    <div class=\"mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0\">\n        <slot />\n    </div>\n</template>"],"names":[],"mappings":";;;;AACS,SAAA,eAAA,MAAA,OAAA,SAAA,QAA2D;;;;;;;;;;;;"}

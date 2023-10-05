@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default']
+    'Expertise copy': typeof import("../components/Expertise copy.vue")['default']
     'Expertise': typeof import("../components/Expertise.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'MobileNav': typeof import("../components/MobileNav.vue")['default']
@@ -74,6 +75,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCard': typeof import("../components/Card.vue")['default']
+    'LazyExpertise copy': typeof import("../components/Expertise copy.vue")['default']
     'LazyExpertise': typeof import("../components/Expertise.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyMobileNav': typeof import("../components/MobileNav.vue")['default']
@@ -149,6 +151,7 @@ declare module 'vue' {
 }
 
 export const Card: typeof import("../components/Card.vue")['default']
+export const Expertise copy: typeof import("../components/Expertise copy.vue")['default']
 export const Expertise: typeof import("../components/Expertise.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const MobileNav: typeof import("../components/MobileNav.vue")['default']
@@ -221,6 +224,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCard: typeof import("../components/Card.vue")['default']
+export const LazyExpertise copy: typeof import("../components/Expertise copy.vue")['default']
 export const LazyExpertise: typeof import("../components/Expertise.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyMobileNav: typeof import("../components/MobileNav.vue")['default']
