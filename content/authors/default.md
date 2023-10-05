@@ -1,6 +1,6 @@
 ---
 name: JeongYun Lee
-avatar: ../public/images/setting/img.jpeg
+avatar: /images/author.png
 occupation: Beginner Research or Developer
 nationality: Seoul, South Korea
 email: cathx618@gmail.com
