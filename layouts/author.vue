@@ -19,7 +19,8 @@ const { name, avatar, occupation, nationality, email, twitter, linkedin, github 
         </div>
         <div class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
             <div class="flex flex-col items-center pt-8">
-                <nuxt-img :src="avatar" alt="avatar" width="1440px" height="1440px" class="h-48 w-48 rounded-full" />
+                <nuxt-img src="/static/images/img.jpeg" alt="avatar" width="1440px" height="1440px"
+                    class="h-48 w-48 rounded-full" />
                 <h3 class="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{{ name }}</h3>
                 <div class="text-gray-500 dark:text-gray-400">{{ occupation }}</div>
                 <div class="text-gray-500 dark:text-gray-400">{{ nationality }}</div>
