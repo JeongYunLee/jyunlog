@@ -55,9 +55,9 @@ export default defineAppConfig({
     siteUrl: "https://jyunlee.com",
     siteRepo:
       "https://github.com/narasimhajupally/tailwind-nuxtjs-starter-blog",
-    siteLogo: "/images/setting/favicon.png",
-    image: "/images/setting/author.png",
-    socialBanner: "/images/setting/twitter-card.png",
+    siteLogo: "/images/favicon.png",
+    image: "/images/author.png",
+    socialBanner: "/images/twitter-card.png",
     email: "cathx618@gmail.com",
     github: "https://github.com/JeongYunLee",
     twitter: "https://twitter.com/Twitter",
