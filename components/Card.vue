@@ -7,11 +7,11 @@ const { title, description, imgSrc, href } = defineProps(["title", "description"
             :class="`${imgSrc && 'h-full'}  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`">
             <template v-if="imgSrc">
                 <NuxtLink v-if="href" :href="href" :aria-label="`Link to ${title}`">
-                    <nuxt-img :alt="title" :src="`/_ipx/s_544x306${imgSrc}`"
-                        class="object-cover object-center md:h-36 lg:h-48" :width="544" :height="306" placeholder />
+                    <nuxt-img :alt="title" :src="imgSrc" class="object-cover object-center md:h-36 lg:h-48" :width="544"
+                        :height="306" placeholder />
                 </NuxtLink>
-                <nuxt-img v-else :alt="title" :src="`/_ipx/s_544x306${imgSrc}`"
-                    class="object-cover object-center md:h-36 lg:h-48" :width="544" :height="306" placeholder />
+                <nuxt-img v-else :alt="title" :src="imgSrc" class="object-cover object-center md:h-36 lg:h-48" :width="544"
+                    :height="306" placeholder />
             </template>
             <div class="p-6">
                 <h2 class="mb-3 text-2xl font-bold leading-8 tracking-tight">
