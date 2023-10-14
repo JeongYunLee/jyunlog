@@ -7,6 +7,34 @@ const headerNavLinks = [
     { href: '/Latest', title: 'Latest' },
 ];
 const siteMetadata = useAppConfig().metadata;
+
+
+
+
+const gtagScriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-91SBXSS665';
+
+// dataLayer 초기화
+const dataLayer = ref([]);
+
+// gtag 함수 정의
+const gtag = (...args) => dataLayer.value.push(args);
+
+// 스크립트 로드 및 초기화
+onMounted(() => {
+  if (!import.meta.env.SSR) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = gtagScriptSrc;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      gtag('js', new Date());
+      gtag('config', 'G-91SBXSS665');
+    };
+  }
+});
+
+
 </script>
 <template>
     <Html lang="en" class="scroll-smooth">

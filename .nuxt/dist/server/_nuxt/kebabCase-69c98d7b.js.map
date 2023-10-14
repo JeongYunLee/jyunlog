@@ -1,1 +1,0 @@
-{"version":3,"file":"kebabCase-69c98d7b.js","sources":["../../../../utils/kebabCase.ts"],"sourcesContent":["import { slug } from \"github-slugger\";\n\nexport default function (str: string) {\n    return slug(str);\n}\n"],"names":[],"mappings":";AAEA,SAAA,qBAAyB,KAAa;AAClC,SAAO,KAAK,GAAG;AACnB;"}
