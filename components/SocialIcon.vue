@@ -24,6 +24,6 @@ const icons = {
         <span class="sr-only">{{ kind }}</span>
         <Icon :name="icons[kind]"
             class="fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
-            :height="size * 4" :width="size * 4" />
+            :height="size * 3" :width="size * 3" />
     </a>
 </template>
