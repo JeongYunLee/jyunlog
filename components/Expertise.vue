@@ -21,13 +21,12 @@
 
             <div>
                 <ul>
-                    <li class="text-gray-500 dark:text-gray-400">Taking a
-                        picture →
+                    <li class="text-gray-500 dark:text-gray-400">Taking pictures →
                         <SocialIcon kind="instagram" href="https://www.instagram.com/j_pick_ture/?igshid=YmMyMTA2M2Y%3"
                             :size="5" />
                     </li>
-                    <li class="text-gray-500 dark:text-gray-400">Playing a guitar</li>
-                    <li class="text-gray-500 dark:text-gray-400">Travel, Walking around</li>
+                    <li class="text-gray-500 dark:text-gray-400">Playing the guitar</li>
+                    <li class="text-gray-500 dark:text-gray-400">Traveling, Walking around</li>
                     <li class="text-gray-500 dark:text-gray-400">Korean Traditional things</li>
                 </ul>
             </div>
