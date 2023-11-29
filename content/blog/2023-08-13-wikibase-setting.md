@@ -8,7 +8,7 @@ summary: Mediawiki의 기본적인 환경설정을 하는 방법을 알아봅니
 
 <div style="color:#F08080;border-radius:10px;text-align:center;">
     <h3><em><span style="color:#F08080;">❝</span></em></h3>
-    <h3><em><span style="color:#F08080;">작성 중인 문서입니다.</span></em></h3>
+    <h3><em><span style="color:#F08080;">2023-11-29에 수정된 문서 입니다</span></em></h3>
     <h3><em><span style="color:#F08080;">❞</span></em></h3>
 </div>
 
@@ -94,12 +94,97 @@ $wgFavicon = "$wgScriptPath/resources/assets/favicon.ico";
 
 ### 4. New Page (Page, Item, Porperty 등) 생성하기
 
-### 5. Extension 추가히가
+1.  Page 편집
+    편집하고 싶은 문서의 제목을 검색합니다.
+    검색된 문서가 없다면 새 문서를 링크를 통해서 생성하세요.
+    기존 문서 수정은 우측 상단의 '편집' 탭을 눌러서 실행합니다.
+    수정 사항 시 이슈가 있다면 문서 제목 하단 좌측의 '토론' 탭을 눌러 이슈를 작성합니다.
+
+2.  Page 생성
+    문서를 생성하는 방법은 두 가지가 있습니다. 둘 중 원하는 방법을 선택하여 진행하세요.
+
+    2-1. 검색 후 생성  
+     생성하고 싶은 문서의 제목을 검색합니다.
+    검색된 문서가 있다면 해당 페이지의 내용을 수정, 추가합니다.
+    검색된 문서가 없다면 새 문서를 링크를 통해서 생성하세요.
+
+    2-2. URL 사용
+
+    새 문서를 생성할 때 위키의 URL을 사용할 수 있습니다. URL을 다음과 같이 수정하세요:
+
+    `http://[도메인주소]/[새로운페이지제목]`
+
+    새 문서가 생성되면 '편집' 버튼을 클릭해 내용을 작성하세요.
+
+3.  Item 편집
+    편집하고 싶은 아이템의 제목을 검색합니다.
+    검색된 아이템이 없다면 Special:NewItem 을 통해서 생성하세요.
+    기존 아이템 수정은 우측 상단의 '편집' 탭을 눌러서 실행합니다.
+    수정 사항 시 이슈가 있다면 아이템 이름 하단 좌측의 '토론' 탭을 눌러 이슈를 작성합니다.
+
+4.  Item 생성
+    생성하고 싶은 아이템의 제목을 검색합니다.
+    검색된 아이템이 없다면 Special:NewItem 을 통해서 생성하세요.
+
+5.  Property 편집
+    현재 속성 편집은 관리자 외 불가합니다.
+    생성된 속성과 관련한 이슈가 있다면 속성 이름 하단 좌측의 '토론' 탭을 눌러 이슈를 작성합니다.
+
+6.  Property 생성
+    생성하고 싶은속성의 제목을 검색합니다.
+    검색된 속성이 없다면 Special:NewItem 을 통해서 생성하세요.
+
+### 5. Extension 추가하기
+
+`cd extensions`로 들어가서 원하는 확장 파일을 업로드합니다. 업로드 후 LocalSettings.php에서 `wfLoadExtension( '' );`안에 추가한 확장자를 작성합니다.
 
 ### 6. 메일 에러 고치기
 
+google mail을 기준으로 합니다.
+
+1. `apt-get install sendmail` 실행한 뒤
+2. LocalSettings.php 에 다음 내용을 추가합니다.
+
+   ```jsx
+   $wgEnableEmail = true;
+   $wgEnableUserEmail = true;
+   $wgEmergencyContact = "cathx618@gmail.com";
+   $wgEmailAuthentication = true;
+   ```
+
+3. [해당 링크](https://support.google.com/accounts/answer/185833?hl=ko)로 들어가서 앱 비밀번호를 발급받습니다.
+4. 발급받은 비밀번호를 아래 password에 넣어주고 LocalSettings.php에 추가해줍니다.
+
+   ```jsx
+   $wgSMTP = [
+         'host'=> "smtp.gmail.com",
+         'IDHost'   => "gmail.com",
+         'port'     => 587,
+         'auth'     => true,
+         'username' => "[이메일주소]",
+         'password' => "[발급받은 비밀번호]"
+   ];
+   ```
+
 ### 7. 문서 대량 업로드
+
+문서를 대량으로 업로드 하는 방법은 여러가지 있고 해당 블로그에서는 wikibaseintegrator를 사용하였습니다.
+https://jyunlee.com/blog/2023-03-15-wikibabeintegrator 다음 글을 참고하세요.
 
 ### 8. 문서 대량 삭제
 
+DeleteBatch 사용. 다음 [링크](https://www.mediawiki.org/wiki/Extension:DeleteBatch)의 가이드 순서대로 진행했습니다.
+이후 DeleteBatch 페이지로 들어가서 `item:Q100 | No longer needed ` 와 같은 형식으로 삭제할 아이템을 하나씩 작성합니다. (tip: chatgpt를 활용하세요...)
+
 ### 9. 사용자 권한 설정
+
+LocalSettings.php에서 다음 코드를 통해 설정합니다.
+
+```jsx
+## 회원가입 권한
+$wgGroupPermissions['*']['createaccount'] = false;
+## 수정 권한
+$wgGroupPermissions['*']['edit'] = false;
+```
+
+false로 설정하면 회원가입과 수정 권한이 없습니다. admin이 새로운 계정을 만들기 위해서는 'http://[도메인주소]/Special:CreateAccount' 로 접속해서 생성할 수 있습니다.

@@ -17,6 +17,7 @@ const [prev, next] = await queryContent('blog')
     .findSurround(path)
 
 </script>
+
 <template>
     <NuxtLayout :name="post.layout || DEFAULT_LAYOUT" :post="post" :authorDetails="authorDetails" :next="next" :prev="prev">
     </NuxtLayout>
