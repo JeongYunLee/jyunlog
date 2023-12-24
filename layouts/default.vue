@@ -21,17 +21,17 @@ const gtag = (...args) => dataLayer.value.push(args);
 
 // 스크립트 로드 및 초기화
 onMounted(() => {
-  if (!import.meta.env.SSR) {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = gtagScriptSrc;
-    document.head.appendChild(script);
+    if (!import.meta.env.SSR) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = gtagScriptSrc;
+        document.head.appendChild(script);
 
-    script.onload = () => {
-      gtag('js', new Date());
-      gtag('config', 'G-91SBXSS665');
-    };
-  }
+        script.onload = () => {
+            gtag('js', new Date());
+            gtag('config', 'G-91SBXSS665');
+        };
+    }
 });
 
 

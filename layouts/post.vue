@@ -7,14 +7,41 @@ const { post, authorDetails, next, prev } = defineProps([
 
 const siteMetadata = useAppConfig().metadata;
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/content/${fileName}`
+// const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/content/${fileName}`
 const discussUrl = (slug) =>
     `https://mobile.twitter.com/search?q=${encodeURIComponent(
         `${siteMetadata.siteUrl}/blog/${slug}`
     )}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+
+const giscusScript = ref({
+    src: "https://giscus.app/client.js",
+    "data-repo": "JeongYunLee/jyunlog",
+    "data-repo-id": "R_kgDOJILkVg",
+    "data-category": "General",
+    "data-category-id": "DIC_kwDOJILkVs4Cb672",
+    "data-mapping": "pathname",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": "preferred_color_scheme",
+    "data-lang": "ko",
+    crossorigin: "anonymous",
+    async: true,
+})
+
+onMounted(() => {
+    const script = document.createElement('script');
+    for (const [key, value] of Object.entries(giscusScript.value)) {
+        script.setAttribute(key, value);
+    }
+    document.querySelector('.prose').appendChild(script);
+});
 </script>
+
+
 <template>
     <SectionContainer>
         <ScrollTopAndComment />
@@ -37,6 +64,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                         </div>
                     </div>
                 </header>
+
                 <div class="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
                     :style="{ gridTemplateRows: 'auto 1fr' }">
                     <dl class="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
@@ -61,6 +89,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                             </ul>
                         </dd>
                     </dl>
+
                     <div class="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
                         <div class="prose max-w-none pt-10 pb-8 dark:prose-dark">
                             <ContentRenderer :value="post"></ContentRenderer>
@@ -72,6 +101,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                         </div>
                         <!-- <Comments frontMatter={frontMatter} /> -->
                     </div>
+
                     <footer>
                         <div
                             class="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
@@ -110,8 +140,11 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                             </NuxtLink>
                         </div>
                     </footer>
+
                 </div>
             </div>
         </article>
+
     </SectionContainer>
 </template>
+

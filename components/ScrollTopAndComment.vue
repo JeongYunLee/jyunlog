@@ -6,12 +6,15 @@ const handleScrollTop = () => {
     window.scrollTo({ top: 0 })
 }
 const handleScrollToComment = () => {
-    document.getElementById('comment').scrollIntoView()
+    // document.getElementById('comment').scrollIntoView()
+    window.scrollTo({ top: document.body.scrollHeight });
 }
+
 const handleWindowScroll = () => {
     if (window.scrollY > 50) show.value = true
     else show.value = false
 }
+
 onMounted(() => {
     window.addEventListener('scroll', handleWindowScroll)
 })
@@ -20,6 +23,7 @@ onUnmounted(() => {
 })
 
 </script>
+
 <template>
     <div :class="`fixed right-8 bottom-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`">
 
@@ -31,6 +35,7 @@ onUnmounted(() => {
                     clipRule="evenodd" />
             </svg>
         </button>
+
         <button aria-label="Scroll To Top" type="button" @click="handleScrollTop"
             class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600">
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

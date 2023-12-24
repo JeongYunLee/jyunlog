@@ -12,16 +12,22 @@
     "href": "https://culturalheritage-teamcayley.netlify.app/"
   },
   {
-    "title": "jyunlee.com",
-    "description": "JYun's personal website",
-    "imgSrc": "images/personalblog.png",
-    "href": "https://github.com/JeongYunLee/jyunlog"
+    "title": "Used Car price predict model",
+    "description": "중고차 가격, 조건 예측 모델 미니 프로젝트입니다. 자세한 내용은 블로그 글을 참고하세요.",
+    "imgSrc": "images/usedcar_miniproject.png",
+    "href": "https://github.com/JeongYunLee/2023BigData_teamproject"
   },
   {
     "title": "Forest_Welfare",
     "description": "시각화로 알아보는 산림복지: 2021 산림복지진흥원 공모전 수상작",
     "imgSrc": "images/forest-welfare.png",
     "href": "https://github.com/JeongYunLee/Forest_Welfare"
+  },
+  {
+    "title": "jyunlee.com",
+    "description": "JYun's personal website",
+    "imgSrc": "images/personalblog.png",
+    "href": "https://github.com/JeongYunLee/jyunlog"
   },
   {
     "title": "covid19-cluster-infection",
