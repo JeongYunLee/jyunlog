@@ -77,13 +77,13 @@ onMounted(() => {
                                     <dl class="whitespace-nowrap text-sm font-medium leading-5">
                                         <dt class="sr-only">Name</dt>
                                         <dd class="text-gray-900 dark:text-gray-100">{{ author.name }}</dd>
-                                        <dt class="sr-only">Twitter</dt>
+                                        <!-- <dt class="sr-only">Twitter</dt>
                                         <dd>
                                             <NuxtLink v-if="author.twitter" :href="author.twitter"
                                                 class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                                                 {{ author.twitter.replace('https://twitter.com/', '@') }}
                                             </NuxtLink>
-                                        </dd>
+                                        </dd> -->
                                     </dl>
                                 </li>
                             </ul>
