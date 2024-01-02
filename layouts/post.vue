@@ -15,30 +15,30 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-const giscusScript = ref({
-    src: "https://giscus.app/client.js",
-    "data-repo": "JeongYunLee/jyunlog",
-    "data-repo-id": "R_kgDOJILkVg",
-    "data-category": "General",
-    "data-category-id": "DIC_kwDOJILkVs4Cb672",
-    "data-mapping": "pathname",
-    "data-strict": "0",
-    "data-reactions-enabled": "1",
-    "data-emit-metadata": "0",
-    "data-input-position": "top",
-    "data-theme": "preferred_color_scheme",
-    "data-lang": "ko",
-    crossorigin: "anonymous",
-    async: true,
-})
+// const giscusScript = ref({
+//     src: "https://giscus.app/client.js",
+//     "data-repo": "JeongYunLee/jyunlog",
+//     "data-repo-id": "R_kgDOJILkVg",
+//     "data-category": "General",
+//     "data-category-id": "DIC_kwDOJILkVs4Cb672",
+//     "data-mapping": "pathname",
+//     "data-strict": "0",
+//     "data-reactions-enabled": "1",
+//     "data-emit-metadata": "0",
+//     "data-input-position": "top",
+//     "data-theme": "preferred_color_scheme",
+//     "data-lang": "ko",
+//     crossorigin: "anonymous",
+//     async: true,
+// })
 
-onMounted(() => {
-    const script = document.createElement('script');
-    for (const [key, value] of Object.entries(giscusScript.value)) {
-        script.setAttribute(key, value);
-    }
-    document.querySelector('.prose').appendChild(script);
-});
+// onMounted(() => {
+//     const script = document.createElement('script');
+//     for (const [key, value] of Object.entries(giscusScript.value)) {
+//         script.setAttribute(key, value);
+//     }
+//     document.querySelector('.prose').appendChild(script);
+// });
 </script>
 
 
@@ -100,6 +100,7 @@ onMounted(() => {
                             <NuxtLink :href="editUrl(post._file)">View on GitHub</NuxtLink> -->
                         </div>
                         <!-- <Comments frontMatter={frontMatter} /> -->
+                        <Comments />
                     </div>
 
                     <footer>
