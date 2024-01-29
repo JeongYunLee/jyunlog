@@ -29,4 +29,8 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  generate: {
+    routes: ["/blog/2024-01-16-llama2"],
+  },
 });
