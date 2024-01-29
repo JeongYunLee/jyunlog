@@ -29,4 +29,10 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  router: {
+    options: {
+      strict: true,
+    },
+  },
 });

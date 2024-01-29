@@ -2,8 +2,3 @@
     from = "/*"
     to = "/index.html"
     status = 200
-
-[[redirects]]
-  from = "https://jyunlee.com/blog/2024-01-16-llama2/"
-  to = "https://jyunlee.com/blog/2024-01-16-llama2"
-  force = true
