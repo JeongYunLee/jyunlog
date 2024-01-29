@@ -22,8 +22,7 @@
             <div>
                 <ul>
                     <li class="text-gray-500 dark:text-gray-400">Taking pictures →
-                        <SocialIcon kind="instagram" href="https://www.instagram.com/j_pick_ture/"
-                            :size="5" />
+                        <SocialIcon kind="instagram" href="https://www.instagram.com/j_pick_ture/" :size="5" />
                     </li>
                     <li class="text-gray-500 dark:text-gray-400">Playing the guitar</li>
                     <li class="text-gray-500 dark:text-gray-400">Traveling, Walking around</li>
@@ -66,19 +65,6 @@
         </div>
     </div>
 </template>
-
-<style>
-a#profile {
-	display:inline-block;
-	width:넓이px;
-	height:높이px;
-  background:url('마우스 커서를 올리기 전 보여질 이미지 경로') no-repeat;
-}
-
-a#prpfile:hover{
-  background:url('마우스 커서를 올린 후 보여질 이미지 경로') no-repeat;
-}
-</style>
   
 <script>
 import colorMC from "./colorMC.vue";
