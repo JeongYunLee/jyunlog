@@ -100,7 +100,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                             <NuxtLink :href="editUrl(post._file)">View on GitHub</NuxtLink> -->
                         </div>
                         <!-- <Comments frontMatter={frontMatter} /> -->
-                        <Comments />
+                        <!-- <Comments /> -->
                     </div>
 
                     <footer>
