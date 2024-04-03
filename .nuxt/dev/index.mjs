@@ -211,7 +211,7 @@ const appConfig0 = defineAppConfig({
     // true or false
     umamiWebsiteId: "",
     // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: "",
+    googleAnalyticsId: "G-91SBXSS665",
     // e.g. UA-000000-2 or G-XXXXXXX
     posthogAnalyticsId: ""
     // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
@@ -4578,7 +4578,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"icon\" type=\"image/png\" href=\"/favicons/favicon.png\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,

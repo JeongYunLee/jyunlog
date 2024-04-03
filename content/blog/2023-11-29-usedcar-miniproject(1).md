@@ -6,14 +6,11 @@ draft: false
 summary: kaggle의 used car data를 활용한 mini proejct 관련한 첫번째 글입니다. 프로젝트 설계부터 Data Cleaning 까지의 내용을 다룹니다.
 ---
 
-<div style="color:#F08080;border-radius:10px;text-align:center;">
-    <h3><em><span style="color:#F08080;">❝</span></em></h3>
-    <h3><em><span style="color:#F08080;">작성 중인 문서입니다.</span></em></h3>
-    <h3><em><span style="color:#F08080;">❞</span></em></h3>
-</div>
+![demo-main-pages](/images/blogImg/2023-12-22-1.png)
 
 > - 사용데이터: [kaggle 중고차 데이터](https://www.kaggle.com/datasets/tunguz/used-car-auction-prices)
 > - 데모 코드 깃헙: [2023BigData_teamproject](https://github.com/JeongYunLee/2023BigData_teamproject)
+> - 데이터 분석 코드 깃헙: [2023BigData_teamproject/code](https://github.com/JeongYunLee/2023BigData_teamproject/tree/main/code)
 
 수강하고 있는 수업에서 진행한 '중고차 가격, 조건 예측 모델' term project 입니다. 요즘에 중고차에 관심이 많은 개인적인 사심이 살짝 들어가기도 했고, 현대기아에서 중고차 시장에 진출하는 사회적 이슈와도 적당히 맞는 것 같아서 주제를 선정했습니다.
 
@@ -40,9 +37,6 @@ summary: kaggle의 used car data를 활용한 mini proejct 관련한 첫번째 �
 This car, produced in 2005, is a KIA K7 with the T5 trim. It features a sedan style, operates with a automatic transmission. Being in 2.7 condition, the car has traveled approximately 500000 kilometers. ...
 ```
 
-이렇게 적어보니, 모든 과정이 challenging한 것들이네요. 성능이 잘 나올진 모르겠지만, 일단 고!  
-이제 본격적으로 데이터를 살펴봅시다!!
+이렇게 적어보니, 모든 과정이 challenging한 것들이네요. 성능이 그렇게 좋진 않았지만, 이런 방법도 있구나 정도로만 생각해주시면 감사하겠습니다.
 
-## 1. EDA
-
-이후 본격적인 모델 학습과 관련된 내용은 다음 (2) 글에서 다룹니다~
+원래 목표는 모든 코드와 데모를 만든 과정까지 하나하나 기록해보려 했지만... 생각보다 시간이 많이 걸려서, 이번 글은 프로젝트 설계와 데이터 전처리까지만 다루겠습니다. 다음에 기회가 된다면 

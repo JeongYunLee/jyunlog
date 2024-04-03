@@ -26,6 +26,12 @@ export default defineNuxtConfig({
     },
   },
 
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "/favicons/favicon.png" }],
+    },
+  },
+
   devtools: {
     enabled: true,
   },

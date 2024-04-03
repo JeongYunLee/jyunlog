@@ -54,7 +54,8 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                                 <dt class="sr-only">Published on</dt>
                                 <dd class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                                     <time dateTime={date}>
-                                        {{ new Date(post.date).toLocaleDateString(siteMetadata.locale, postDateTemplate) }}
+                                        {{ new Date(post.date).toLocaleDateString(siteMetadata.locale, postDateTemplate)
+                                        }}
                                     </time>
                                 </dd>
                             </div>
@@ -71,9 +72,10 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                         <dt class="sr-only">Authors</dt>
                         <dd>
                             <ul class="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                                <li v-for="author in authorDetails" class="flex items-center space-x-2" :key="author.name">
-                                    <nuxt-img v-if="author.avatar" :src="author.avatar" width="38" height="38" alt="avatar"
-                                        class="h-10 w-10 rounded-full" />
+                                <li v-for="author in authorDetails" class="flex items-center space-x-2"
+                                    :key="author.name">
+                                    <nuxt-img v-if="author.avatar" :src="author.avatar" width="38" height="38"
+                                        alt="avatar" class="h-10 w-10 rounded-full" />
                                     <dl class="whitespace-nowrap text-sm font-medium leading-5">
                                         <dt class="sr-only">Name</dt>
                                         <dd class="text-gray-900 dark:text-gray-100">{{ author.name }}</dd>
@@ -100,7 +102,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
                             <NuxtLink :href="editUrl(post._file)">View on GitHub</NuxtLink> -->
                         </div>
                         <!-- <Comments frontMatter={frontMatter} /> -->
-                        <Comments />
+                        <!-- <Comments /> -->
                     </div>
 
                     <footer>
@@ -148,4 +150,3 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 
     </SectionContainer>
 </template>
-
