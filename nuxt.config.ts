@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   vite: {
     build: {
       rollupOptions: {
-        external: ['/main_bg.jpg'], // 문제 파일을 외부 리소스로 지정
+       
       },
     },
   },
