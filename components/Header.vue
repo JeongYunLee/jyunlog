@@ -13,7 +13,13 @@
     </div> -->
     <TransitionGroup name="list" tag="div" class="header-bg">
       <!-- <div v-for="rectang in columns" :key="rectang" :style="rectang"></div> -->
-      <img :class="showBgImg ? 'opacity-100' : 'opacity-0'" src="/main_bg.jpg" width="1920" height="1280" alt="background image" />
+        <img 
+          :class="showBgImg ? 'opacity-100' : 'opacity-0'" 
+          :src="mainBgImage" 
+          width="1920" 
+          height="1280" 
+          alt="background image" 
+        />
     </TransitionGroup>
     <div class="content text-center" :class="showContent ? 'opacity-85' : 'opacity-0'">
       <h1 class="leading-3">
@@ -31,6 +37,8 @@
   </header>
 </template>
 <script setup>
+import mainBgImage from '~/assets/image/main_bg.jpg'
+
 // const loading = ref(true);
 const columns = ref([]);
 const counter = ref(0);
