@@ -2,6 +2,13 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  vite: {
+    build: {
+      rollupOptions: {
+        external: [], // 이 부분을 빈 배열로 설정하여 이미지를 외부 리소스로 설정하지 않음
+      },
+    },
+  },
   app: {
     head: {
       htmlAttrs: {
