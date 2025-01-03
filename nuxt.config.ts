@@ -2,6 +2,13 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ['/main_bg.JPG'], // 문제 파일을 외부 리소스로 지정
+      },
+    },
+  },
   app: {
     head: {
       htmlAttrs: {
