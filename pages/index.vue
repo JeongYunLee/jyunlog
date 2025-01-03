@@ -1,8 +1,45 @@
 <script setup>
-const authorDetails = await queryContent().where({ _path: "/authors/default" }).findOne();
-
+const jsonLd = {
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  name: "Web Developer Portfolio | Po Yi Zhi",
+  author: {
+    "@type": "Person",
+    "@id": "#poyizhi",
+  },
+  url: "https://www.eazypau.com/",
+  description:
+    "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+  keywords:
+    "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, eazypau, Malaysia",
+  image: "https://www.eazypau.com/profile-pics/profile.jpeg",
+};
+const personJson = {
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "@id": "#poyizhi",
+  name: "Po Yi Zhi",
+  email: "poyizhi@gmail.com",
+  url: "https://www.eazypau.com/",
+};
+useHead({
+  script: [
+    {
+      children: JSON.stringify(jsonLd),
+      type: "application/ld+json",
+    },
+    {
+      children: JSON.stringify(personJson),
+      type: "application/ld+json",
+    },
+  ],
+});
+definePageMeta({
+  layout: false,
+});
 </script>
-
 <template>
-    <NuxtLayout name="author" :author-details="authorDetails"></NuxtLayout>
+  <NuxtLayout name="main">
+    <Header />
+  </NuxtLayout>
 </template>

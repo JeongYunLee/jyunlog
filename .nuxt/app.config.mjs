@@ -1,8 +1,16 @@
 
+import { updateAppConfig } from '#app'
 import { defuFn } from '/Users/jeongyunl/Documents/GitHub/jyunlog/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
-import cfg0 from "/Users/jeongyunl/Documents/GitHub/jyunlog/app.config.ts"
+// Vite - webpack is handled directly in #app/config
+if (import.meta.hot) {
+  import.meta.hot.accept((newModule) => {
+    updateAppConfig(newModule.default)
+  })
+}
 
-export default /* #__PURE__ */ defuFn(cfg0, inlineConfig)
+
+
+export default /* #__PURE__ */ defuFn(inlineConfig)

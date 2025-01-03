@@ -1,29 +1,52 @@
-<script setup>
-const siteMetadata = useAppConfig().metadata;
-</script>
 <template>
+  <div class="footer-section">
     <footer>
-        <div class="mt-16 mb-16 flex flex-col items-center">
-            <div class="mb-3 flex space-x-4">
-                <SocialIcon kind="mail" :href="`mailto:${siteMetadata.email}`" :size="6" />
-                <SocialIcon kind="github" :href=siteMetadata.github :size="6" />
-                <!-- <SocialIcon kind="facebook" :href=siteMetadata.facebook :size="6" /> -->
-                <SocialIcon kind="linkedin" :href=siteMetadata.linkedin :size="6" />
-                <!-- <SocialIcon kind="youtube" :href=siteMetadata.youtube :size="6" /> -->
-                <!-- <SocialIcon kind="twitter" :href=siteMetadata.twitter :size="6" /> -->
-            </div>
-            <div class="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-                <div>{{ siteMetadata.author }}</div>
-                <div>{{ ` • ` }}</div>
-                <div>{{ `© ${new Date().getFullYear()}` }}</div>
-                <div>{{ ` • ` }}</div>
-                <NuxtLink href="/">{{ siteMetadata.title }}</NuxtLink>
-            </div>
-            <!-- <div class="mb-8 text-sm text-gray-500 dark:text-gray-400">
-                <NuxtLink href="https://github.com/narasimhajupally/tailwind-nuxtjs-starter-blog">
-                    Tailwind Nuxtjs Theme
-                </NuxtLink>
-            </div> -->
+      <div class="social-icons-and-navigation">
+        <!-- nav - start -->
+        <!-- <nav>
+          <NuxtLink
+            v-for="item in navigation"
+            :key="item.id"
+            :href="item.href"
+            class="footerBtn"
+            >{{ item.name }}</NuxtLink
+          >
+        </nav> -->
+        <!-- nav - end -->
+
+        <!-- social - start -->
+        <div>
+          <!-- <a href="https://www.instagram.com/yzpo/" aria-label="Instagram" target="_blank" class="footerIcon">
+            <IconsInstaIcon />
+          </a> -->
+
+          <!-- <a href="https://www.facebook.com/yizhipo" aria-label="Facebook" target="_blank" class="footerIcon">
+            <IconsFacebookIcon />
+          </a> -->
+
+            <a href="mailto:your-email@example.com" aria-label="Email" class="footerIcon">
+              <IconsMailIcon />
+            </a>
+
+          <a href="https://www.linkedin.com/in/yzpo/" aria-label="Linkden" target="_blank" class="footerIcon">
+            <IconsLinkedInIcon />
+          </a>
+
+          <a href="https://github.com/eazypau" aria-label="Github" target="_blank" class="footerIcon">
+            <IconsGithubIcon />
+          </a>
         </div>
+        <!-- social - end -->
+      </div>
+
+      <div class="copyright">
+        © {{ CURRENT_YEAR }} - Present JeongYun Lee. All rights reserved.
+      </div>
     </footer>
+  </div>
 </template>
+<script setup>
+// utils and hooks
+const { navigation } = useConstants();
+const CURRENT_YEAR = new Date().getFullYear();
+</script>

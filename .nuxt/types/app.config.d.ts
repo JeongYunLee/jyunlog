@@ -1,10 +1,10 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "/Users/jeongyunl/Documents/GitHub/jyunlog/app.config"
+
 
 declare const inlineConfig = {}
-type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0]>
+type ResolvedAppConfig = Defu<typeof inlineConfig, []>
 type IsAny<T> = 0 extends 1 & T ? true : false
 
 type MergedAppConfig<Resolved extends Record<string, unknown>, Custom extends Record<string, unknown>> = {
