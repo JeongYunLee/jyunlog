@@ -633,7 +633,7 @@ export function useConstants() {
       // icon: "",
       link: {
         text: "Visit HIKE Lab.",
-        url: "https://cau.ac.kr",
+        url: "http://hike.cau.ac.kr",
       },
     },
         {
