@@ -147,17 +147,17 @@ export function useConstants() {
   const hobbies = [
     {
       title: "Drink tea",
-      text: "Best way to start the morning",
+      text: "Starting the morning with a cup of tea",
       classBg: "bg-tea",
     },
     {
       title: "Traveling and walking around",
-      text: "To pen down my thoughts, memories and interesting things that occur in life",
+      text: "Enjoying the exploration of new streets and alleys",
       classBg: "bg-journaling",
     },
     {
-      title: "Learning new technologies/framework",
-      text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
+      title: "Learning new skills",
+      text: "Exciting of discovering new techniques and knowledge",
       classBg: "bg-programming",
     },
     // {
@@ -172,7 +172,7 @@ export function useConstants() {
     // },
     {
       title: "Taking pictures",
-      text: "Recent favourites: MWAM, HONNE, Forester, Milet and Yoasobi",
+      text: "Having fun of capturing moments through photography",
       classBg: "bg-music",
     },
   ];
@@ -627,77 +627,89 @@ export function useConstants() {
 
   const timeline = [
     {
-      date: "July 2023",
-      title: "Started @ JagaApp",
-      description: "Joined the JagaApp team",
+      date: "2024.01 ~",
+      title: "Researcher at HIKE Lab.",
+      description: "Currently a Master’s student and researcher at HIKE Lab.",
       // icon: "",
       link: {
-        text: "Visit JagaApp",
-        url: "https://jagasolution.com/jagaapp/",
+        text: "Visit HIKE Lab.",
+        url: "https://cau.ac.kr",
       },
     },
-    {
-      date: "May 2022",
-      title: "Started @ Limitless Technologies",
-      description: "Joined the Limitless Technologies (LTG) team",
-      // icon: "",
-      link: {
-        text: "Visit LTG",
-        url: "https://limitless.my/",
-      },
-    },
-    {
-      date: "October 2021",
-      title: "First Developer Role",
-      description:
-        "Joined The Hacker Collective (THC) Team as Frontend Web Developer",
-      // icon: "",
-      link: {
-        text: "Visit THC",
-        url: "https://hackercollective.co/",
-      },
-    },
-    {
-      date: "April 2021",
-      title: "Self Taught Journey Begins",
-      description:
-        "Started my journey in self learning programming (web development)",
-      // icon: "",
-    },
-    {
-      date: "August 2019",
-      title: "First Mechanical Engineer Role",
-      description:
-        "Began my job as a Mechanical Engineer in M&E Consultancy at Durianê Professional",
-      // icon: "",
-      link: {
-        text: "Visit Durianê Professional",
-        url: "https://www.duriane.com/",
-      },
-    },
-    {
-      date: "May 2019",
+        {
+      date: "2024.02",
       title: "Graduated University",
-      description:
-        "Completed my Bachelor's Degree in Mechanical Engineering at Multimedia University (MMU)",
+      description: "B.S Department Department of Library and Information Science, Data Science",
       // icon: "",
+      // link: {
+      //   text: "2022.04 ~ 2022.11",
+      //   url: "https://limitless.my/",
+      // },
     },
     {
-      date: "March 2018",
-      title: "Internship",
-      description:
-        "Began an internship as assistent engineer at Protech Builders",
+      date: "2023.01 ~ 2023.12",
+      title: "Intern Researcher at HIKE Lab.",
+      // description: "Joined the Limitless Technologies (LTG) team",
       // icon: "",
+      // link: {
+      //   text: "",
+      //   url: "",
+      // },
+    },
+    {
+      date: "2022.04 ~ 2022.11",
+      title: "Intern Researcher at BMI Lab",
+      description:
+        "In Bio-Medical Informatics Lab (BMI Lab, Seoul National University Hospital), I worked on NLP team. I participated some projects such as developing a new NLP model for the extraction of medical information from clinical notes or diease detection model using clinical notes and EHRs (Electronic Health Records) data.",
+      // icon: "",
+      link: {
+        text: "Visit BMI Lab",
+        url: "https://sites.google.com/view/snuh-bmi-lab",
+      },
+    },
+    // {
+    //   date: "August 2019",
+    //   title: "First Mechanical Engineer Role",
+    //   description:
+    //     "I participated in the Forest Welfare Data Visualization Contest hosted by Korea Forest Welfare Institute. We collected data related to forest welfare facilities and generated results that were effectively visualized.",
+    //   // icon: "",
+    //   // link: {
+    //   //   text: "Visit Durianê Professional",
+    //   //   url: "https://www.duriane.com/",
+    //   // },
+    // },
+    {
+      date: "2020.06 ~ 2023.02",
+      title: "Staff of COSADAMA",
+      description:
+        "COSADAMA(2020-01-13 ~) is the programming community especially for non-majors by students of Chung-Ang university, Seoul, Korea. As a member and a staff of COSADAMA, I was in charge of managing the team and develoing the curriculum website.",
+      // icon: "",
+      link: {
+        text: "Visit COSADAMA",
+        url: "https://cosadama.com/"
+      }
+    },
+    {
+      date: "2020.03 ~ 2022.09",
+      title: "Member of Team.Cayley",
+      description: " Team.Cayley is made up of students from Chung-Ang University, majoring in Library and Information Science and COSADAMA. You can see our performance at the following links and GitHub. \
+                    1. 'COVID-19: Our Memory' project: We archieve our society's changes due to the COVID-19 pandemic as data, and preserve the data for future reference. We donated our digital archieve to the National Library of Korea. (2022.02) \
+                    2. 'Cultural Heritage Synapse: Linking National treasure data' project: We gathered scattered information in about 65 sources of online and offline to create one high-quality data and proposed a standard for national treasure data. Using the data we made some text analysis, a knowledge graph of the cultural heritage data of the National Treasure.",
+      // icon: "",
+        link: {
+        text: "Visit Team.Cayley",
+        url: "https://github.com/TeamCayley-official",
+      },
     },
     {
       date: "June 2015",
       title: "Start University",
       description:
-        "Began my study in Mechanical Engineering at Multimedia University (MMU)",
+        "Chung-Ang University, Seoul, South Korea",
       // icon: "",
       link: {
-        text: "Visit MMU",
-        url: "https://www.mmu.edu.my/",
+        text: "Visit CAU",
+        url: "https://www.cau.ac.kr",
       },
     },
   ];

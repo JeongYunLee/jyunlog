@@ -10,13 +10,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        tea: "url('/hobbies/tea-cup.webp')",
+        tea: "url('/hobbies/tea.jpg')",
         blog: "url('/hobbies/myblog.webp')",
         music:
-          "url('/hobbies/negative-space-headphones-black-white-corey-blaz.webp')",
+          "url('/hobbies/photo.jpg')",
         grocer: "url('/hobbies/grocer.webp')",
-        journaling: "url('/hobbies/journaling.webp')",
-        programming: "url('/hobbies/programming.webp')",
+        journaling: "url('/hobbies/traveling.jpg')",
+        programming: "url('/hobbies/programming.jpg')",
       },
       minWidth: {
         sm: "20rem",
