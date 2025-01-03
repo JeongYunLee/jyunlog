@@ -37,7 +37,7 @@
   </header>
 </template>
 <script setup>
-import mainBgImage from '~/assets/image/main_bg.jpg'
+import mainBgImage from '~/assets/images/main_bg.jpg'
 
 // const loading = ref(true);
 const columns = ref([]);
