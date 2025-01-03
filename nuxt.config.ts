@@ -2,12 +2,18 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  nitro: {
+    publicAssets: [{  // static 대신 publicAssets 사용
+      dir: 'public',
+      baseURL: '/'
+    }]
+  },
+  
   vite: {
+    assetsInclude: ['**/*.jpg', '**/*.png'],  // 이미지 파일 포함 설정 추가
     build: {
-      rollupOptions: {
-       
-      },
-    },
+      rollupOptions: {}
+    }
   },
   app: {
     head: {
