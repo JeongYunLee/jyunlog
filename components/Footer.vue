@@ -24,7 +24,7 @@
             <IconsFacebookIcon />
           </a> -->
 
-            <a href="mailto:your-email@example.com" aria-label="Email" class="footerIcon">
+            <a href="mailto:cathx618@gmail.com" aria-label="Email" class="footerIcon">
               <IconsMailIcon />
             </a>
 
@@ -32,7 +32,7 @@
             <IconsLinkedInIcon />
           </a>
 
-          <a href="https://github.com/eazypau" aria-label="Github" target="_blank" class="footerIcon">
+          <a href="https://www.linkedin.com/in/jyunlee000/" aria-label="Github" target="_blank" class="footerIcon">
             <IconsGithubIcon />
           </a>
         </div>

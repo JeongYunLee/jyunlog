@@ -2,25 +2,25 @@
 const jsonLd = {
   "@context": "https://schema.org/",
   "@type": "WebSite",
-  name: "Web Developer Portfolio | Po Yi Zhi",
+  name: "JeongYun Lee",
   author: {
     "@type": "Person",
-    "@id": "#poyizhi",
+    "@id": "#jyunlee",
   },
   url: "https://www.eazypau.com/",
   description:
-    "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+    "",
   keywords:
-    "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, eazypau, Malaysia",
+    "",
   image: "https://www.eazypau.com/profile-pics/profile.jpeg",
 };
 const personJson = {
   "@context": "https://schema.org/",
   "@type": "Person",
-  "@id": "#poyizhi",
-  name: "Po Yi Zhi",
-  email: "poyizhi@gmail.com",
-  url: "https://www.eazypau.com/",
+  "@id": "#jyunlee",
+  name: "JeongYun Lee",
+  email: "cathx618@gmail.com",
+  url: "https://jyunlee.com/",
 };
 useHead({
   script: [

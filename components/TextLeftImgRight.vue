@@ -112,12 +112,12 @@
               <IconsInstaIcon />
             </a> -->
 
-            <a href="mailto:your-email@example.com" aria-label="Email">
+            <a href="mailto:cathx618@gmail.com" aria-label="Email">
               <IconsMailIcon />
             </a>
 
             <a
-              href="https://www.linkedin.com/in/yzpo/"
+              href="https://www.linkedin.com/in/jyunlee000"
               aria-label="Linkden"
               target="blank"
             >
@@ -125,7 +125,7 @@
             </a>
 
             <a
-              href="https://github.com/eazypau"
+              href="https://github.com/JeongYunLee"
               aria-label="Github"
               target="blank"
             >
