@@ -28,11 +28,11 @@
               <IconsMailIcon />
             </a>
 
-          <a href="https://www.linkedin.com/in/yzpo/" aria-label="Linkden" target="_blank" class="footerIcon">
+          <a href="https://www.linkedin.com/in/jyunlee000/" aria-label="Linkden" target="_blank" class="footerIcon">
             <IconsLinkedInIcon />
           </a>
 
-          <a href="https://www.linkedin.com/in/jyunlee000/" aria-label="Github" target="_blank" class="footerIcon">
+          <a href="https://github.com/JeongYunLee" aria-label="Github" target="_blank" class="footerIcon">
             <IconsGithubIcon />
           </a>
         </div>
