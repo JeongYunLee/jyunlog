@@ -627,7 +627,7 @@ export function useConstants() {
 
   const timeline = [
     {
-      date: "2024.01 ~",
+      // date: "2024.01 ~",
       title: "Researcher at HIKE Lab.",
       description: "Currently a Master’s student and researcher at HIKE Lab.",
       // icon: "",
@@ -637,7 +637,7 @@ export function useConstants() {
       },
     },
         {
-      date: "2024.02",
+      // date: "2024.02",
       title: "Graduated University",
       description: "B.S Department Department of Library and Information Science, Data Science",
       // icon: "",
@@ -647,7 +647,7 @@ export function useConstants() {
       // },
     },
     {
-      date: "2023.01 ~ 2023.12",
+      // date: "2023.01 ~ 2023.12",
       title: "Intern Researcher at HIKE Lab.",
       // description: "Joined the Limitless Technologies (LTG) team",
       // icon: "",
@@ -657,7 +657,7 @@ export function useConstants() {
       // },
     },
     {
-      date: "2022.04 ~ 2022.11",
+      // date: "2022.04 ~ 2022.11",
       title: "Intern Researcher at BMI Lab",
       description:
         "In Bio-Medical Informatics Lab (BMI Lab, Seoul National University Hospital), I worked on NLP team. I participated some projects such as developing a new NLP model for the extraction of medical information from clinical notes or diease detection model using clinical notes and EHRs (Electronic Health Records) data.",
@@ -679,7 +679,7 @@ export function useConstants() {
     //   // },
     // },
     {
-      date: "2020.06 ~ 2023.02",
+      // date: "2020.06 ~ 2023.02",
       title: "Staff of COSADAMA",
       description:
         "COSADAMA(2020-01-13 ~) is the programming community especially for non-majors by students of Chung-Ang university, Seoul, Korea. As a member and a staff of COSADAMA, I was in charge of managing the team and develoing the curriculum website.",
@@ -690,7 +690,7 @@ export function useConstants() {
       }
     },
     {
-      date: "2020.03 ~ 2022.09",
+      // date: "2020.03 ~ 2022.09",
       title: "Member of Team.Cayley",
       description: " Team.Cayley is made up of students from Chung-Ang University, majoring in Library and Information Science and COSADAMA. You can see our performance at the following links and GitHub. \
                     1. 'COVID-19: Our Memory' project: We archieve our society's changes due to the COVID-19 pandemic as data, and preserve the data for future reference. We donated our digital archieve to the National Library of Korea. (2022.02) \
@@ -702,7 +702,7 @@ export function useConstants() {
       },
     },
     {
-      date: "June 2015",
+      // date: "June 2015",
       title: "Start University",
       description:
         "Chung-Ang University, Seoul, South Korea",
