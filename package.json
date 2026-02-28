@@ -27,5 +27,8 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "gsap": "^3.12.2"
+  },
+  "overrides": {
+    "svgo": "^3.2.0"
   }
 }
