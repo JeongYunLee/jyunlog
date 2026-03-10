@@ -5,6 +5,9 @@
     "name": "JeongYun Lee",
     "url": "https://jyunlee.com/"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
