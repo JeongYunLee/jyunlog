@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /mailto:cathx618@gmail.com
-Disallow: /resume/my-resume.pdf
+Disallow: /resume/
 
-Sitemap: http://www.eazypau.com/sitemap.xml
+Sitemap: https://jyunlee.com/sitemap.xml

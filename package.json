@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "eazypau-porfolio",
+  "name": "jyunlee-cv",
   "author": {
-    "name": "Po Yi Zhi",
-    "url": "https://eazypau.com/"
+    "name": "JeongYun Lee",
+    "url": "https://jyunlee.com/"
   },
   "scripts": {
     "dev": "nuxi dev",
@@ -23,11 +23,7 @@
     "sass": "^1.67.0",
     "sass-loader": "^13.3.2"
   },
-  "dependencies": {
-    "@headlessui/vue": "^1.7.16",
-    "@heroicons/vue": "^2.0.18",
-    "gsap": "^3.12.2"
-  },
+  "dependencies": {},
   "overrides": {
     "svgo": "^3.2.0"
   }
