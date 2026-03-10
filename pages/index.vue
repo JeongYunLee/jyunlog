@@ -328,7 +328,7 @@ useHead({
 .fact-block span {
   margin: 0;
   font-size: 0.76rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--muted);
@@ -351,7 +351,7 @@ useHead({
   color: var(--muted);
   font: inherit;
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition:
@@ -401,7 +401,7 @@ useHead({
   margin: 0.9rem 0 0;
   color: var(--accent);
   font-size: clamp(1.02rem, 2.4vw, 1.32rem);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .summary {
@@ -551,6 +551,7 @@ useHead({
   display: block;
   font-size: 1.04rem;
   line-height: 1.45;
+  font-weight: 500;
 }
 
 .record-header span {
@@ -562,7 +563,7 @@ useHead({
 .record-org {
   margin: 0.38rem 0 0;
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.55;
 }
 
