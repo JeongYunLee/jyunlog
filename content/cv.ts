@@ -151,6 +151,44 @@ export const cvEducation: EducationItem[] = [
 
 export const cvPublications: PublicationItem[] = [
   {
+    year: "2026.07",
+    title: {
+      ko: "공공데이터 연계의 구조적 조건: 컬럼 유형과 참조체계를 중심으로",
+      en: "Structural Conditions for Public Data Linkage: Column Types and Reference Systems",
+    },
+    venue: {
+      ko: "디지털콘텐츠학회논문지",
+      en: "Journal of Digital Contents Society",
+    },
+    authors: {
+      ko: "주저자",
+      en: "First Author",
+    },
+    link: {
+      label: "LINK",
+      href: "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003364009",
+    },
+  },
+  {
+    year: "2026.06",
+    title: {
+      ko: "AI Ready Data의 개념적 구조와 한국의 AI Ready 공공데이터 정책 분석",
+      en: "Conceptualizing AI Ready Data and Analyzing South Korea's AI Ready Public Data Policy Framework",
+    },
+    venue: {
+      ko: "정보화정책",
+      en: "Informatization Policy",
+    },
+    authors: {
+      ko: "주저자",
+      en: "First Author",
+    },
+    link: {
+      label: "LINK",
+      href: "https://doi.org/10.22693/NIAIP.2026.33.2.067",
+    },
+  },
+  {
     year: "2025.12",
     title: {
       ko: "주소 정보 접근성 향상을 위한 에이전틱 RAG 기반 챗봇 개발",
